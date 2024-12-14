@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armas de Valorant</title>
+    <script src="theme-toggle.js" defer></script>
+    <script src="armas.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <header class="bg-gray-800 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-3xl font-extrabold text-red-500">Armas de Valorant</h1>
+          <div class="flex items-center space-x-4">
+            <a
+              href="index.html"
+              class="text-gray-400 hover:text-white text-lg underline"
+            >
+              Volver al Inicio
+            </a>
+            <label class="relative inline-block w-14 h-8">
+              <input type="checkbox" id="theme-toggle" class="opacity-0 w-0 h-0 peer" />
+              <span
+                class="absolute inset-0 bg-[#0f161e] transition rounded-full peer-checked:bg-yellow-600 cursor-pointer"
+              ></span>
+              <span
+                class="absolute left-1 bottom-1 h-6 w-6 bg-[#213245] rounded-full shadow-inner transition-transform transform peer-checked:translate-x-6 peer-checked:bg-yellow-500"
+              ></span>
+            </label>
+          </div>
+        </div>
+      </header>
+
+    <main class="container mx-auto p-6 space-y-8">
+      <section
+        id="icon-container"
+        class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center"
+      >
+      </section>
+
+      <section
+        id="video-section"
+        class="bg-gray-800 p-8 rounded-lg shadow-lg flex justify-center"
+      >
+        <video
+          id="weapon-video"
+          class="rounded-lg shadow-md max-h-72 border-4 border-gray-700 hidden"
+          controls
+          autoplay
+        ></video>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-gray-400">Explora las armas del juego en nuestra página web.</p>
+      </div>
+    </footer>
+  </body>
+</html>
